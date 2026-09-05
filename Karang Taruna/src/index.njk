@@ -1,0 +1,77 @@
+---
+layout: base.njk
+title: Beranda
+description: "Situs resmi {{ site.nama_organisasi }}: informasi kegiatan, dokumentasi, dan kontak organisasi kepemudaan desa."
+permalink: /
+---
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow-note">Selamat datang</span>
+      <h1>Wadah pemuda &amp; pemudi {{ site.nama_wilayah }} untuk bergerak bersama.</h1>
+      <p class="lead">{{ site.nama_organisasi }} mendokumentasikan dan menginformasikan kegiatan kepemudaan di lingkungan desa — mulai dari kerja bakti, peringatan hari besar, hingga pembinaan warga.</p>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="/kegiatan/">Lihat Kegiatan Kami</a>
+        <a class="btn btn-outline" href="/tentang/">Tentang Organisasi</a>
+      </div>
+    </div>
+    <svg class="hero-motif" width="300" height="240" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M0 200 Q 60 170 120 200 T 240 200 T 300 190 V240 H0 Z" fill="#163726"/>
+      <path d="M0 215 Q 60 190 120 215 T 240 215 T 300 208 V240 H0 Z" fill="#0f2a1c"/>
+      <g stroke="#c9902c" stroke-width="2.5" stroke-linecap="round">
+        <path d="M70 200 V90"/><path d="M70 130 C 90 120 95 100 88 85"/>
+        <path d="M70 150 C 50 142 44 122 52 108"/><path d="M70 100 C 90 92 94 74 86 62"/>
+      </g>
+      <g stroke="#dcebdd" stroke-width="2.5" stroke-linecap="round">
+        <path d="M150 200 V70"/><path d="M150 110 C 172 100 178 78 168 62"/>
+        <path d="M150 135 C 128 126 122 104 132 88"/><path d="M150 80 C 170 72 174 52 165 40"/>
+      </g>
+      <g stroke="#c9902c" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+        <path d="M225 200 V110"/><path d="M225 145 C 245 136 250 116 242 102"/>
+        <path d="M225 165 C 205 158 200 140 208 126"/>
+      </g>
+    </svg>
+  </div>
+</section>
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 400 14" preserveAspectRatio="none"><path d="M0 7 Q 10 0 20 7 T 40 7 T 60 7 T 80 7 T 100 7 T 120 7 T 140 7 T 160 7 T 180 7 T 200 7 T 220 7 T 240 7 T 260 7 T 280 7 T 300 7 T 320 7 T 340 7 T 360 7 T 380 7 T 400 7" stroke="#1f4d3a" stroke-width="1.5" fill="none"/></svg></div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-note">Sorotan</span>
+      <h2>Kegiatan terbaru &amp; yang akan datang</h2>
+      <p>Ringkasan aktivitas Karang Taruna di lingkungan desa. Lihat halaman Kegiatan untuk daftar lengkap.</p>
+    </div>
+    <ul class="highlight-list">
+      {% for k in kegiatan.items %}
+      <li class="highlight-item">
+        <span class="highlight-date">{{ k.tanggal }}</span>
+        <div>
+          <h3>{{ k.judul }}</h3>
+          <p>{{ k.deskripsi }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap two-col">
+    <div>
+      <span class="eyebrow-note">Tentang singkat</span>
+      <h2>Organisasi kepemudaan berbasis desa</h2>
+      <p class="measure-wide">{{ site.nama_organisasi }} adalah organisasi sosial kepemudaan yang berfokus pada kegiatan dan pembinaan di lingkup desa. Situs ini berfungsi sebagai media informasi dan dokumentasi kegiatan.</p>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="/tentang/" style="background:var(--primary);color:#f4efdd;">Baca Selengkapnya</a>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Butuh informasi lebih lanjut?</h3>
+      <p>Hubungi kami melalui kontak resmi pada halaman Kontak untuk pertanyaan seputar kegiatan dan dokumentasi.</p>
+      <div class="btn-row">
+        <a class="btn btn-outline" style="border-color:var(--primary);color:var(--primary);" href="/kontak/">Lihat Kontak</a>
+      </div>
+    </div>
+  </div>
+</section>
