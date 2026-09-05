@@ -1,0 +1,17 @@
+{
+  "sejarah": [
+    "Tuliskan di sini sejarah singkat berdirinya organisasi: tahun berdiri, latar belakang pembentukan, dan tonggak penting dalam perjalanan organisasi hingga saat ini.",
+    "Ceritakan pula bagaimana organisasi ini berkembang mengikuti kebutuhan pemuda dan warga desa dari waktu ke waktu."
+  ],
+  "visi": "[Tuliskan pernyataan visi organisasi — arah dan cita-cita jangka panjang dalam melayani pemuda dan warga desa.]",
+  "misi": ["[Poin misi pertama]", "[Poin misi kedua]", "[Poin misi ketiga]"],
+  "periode": "[tahun–tahun]",
+  "struktur": [
+    { "jabatan": "Ketua", "nama": "[Nama Ketua]" },
+    { "jabatan": "Wakil Ketua", "nama": "[Nama Wakil Ketua]" },
+    { "jabatan": "Sekretaris", "nama": "[Nama Sekretaris]" },
+    { "jabatan": "Bendahara", "nama": "[Nama Bendahara]" },
+    { "jabatan": "Koordinator Kegiatan", "nama": "[Nama Koordinator]" },
+    { "jabatan": "Koordinator Humas", "nama": "[Nama Koordinator]" }
+  ]
+}
